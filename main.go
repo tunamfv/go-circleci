@@ -2,7 +2,6 @@ package main
 
 import (
 	"errors"
-	"fmt"
 )
 
 var ErrParameterGreaterThanFive = errors.New("parameter's value must be greater than 5")
@@ -16,6 +15,3 @@ func sum(a, b int) (*int, error) {
 	return &sum, nil
 }
 
-func main() {
-	fmt.Println("Welcome")
-}
